@@ -20,5 +20,9 @@ func main() {
   if thirdGreeting != "" {
     fmt.Println("Hello " + thirdGreeting)
     }
+	
+	if welcome := os.Getenv("INPUT_WELCOME") {
+		fmt.Println("Attention " + welcome)
+	}
 
 }
