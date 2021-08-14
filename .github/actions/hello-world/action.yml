@@ -5,3 +5,9 @@ description: "say hello with GitHub Actions"
 runs:
   using: "docker"
   image: "Dockerfile"
+
+inputs:
+  welcome:
+    description: "Welcome string"
+    required: true
+    default: "This is a welcome string"
